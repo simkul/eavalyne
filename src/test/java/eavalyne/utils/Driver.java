@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.util.Map;
+
 public class Driver {
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     public static void setDriver() {
@@ -21,6 +23,7 @@ public class Driver {
         return options;
     }
 
-    public static void close() {driver.get().quit();
-    }
+    public static void close() {driver.get().quit();}
+
+    public static WebDriver getDriver() {return driver.get();}
 }
