@@ -3,7 +3,6 @@ package eavalyne.utils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Driver {
@@ -20,5 +19,8 @@ public class Driver {
         options.addArguments("window-size=2000,3000");
         options.addArguments("--force-device-scale-factor=0.75");
         return options;
+    }
+
+    public static void close() {driver.get().quit();
     }
 }
