@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.xml.sax.Locator;
 
 import java.time.Duration;
 
@@ -28,5 +29,12 @@ public class Common {
 
     private static WebElement getElement(By locator) {
         return Driver.getDriver().findElement(locator);
+    }
+
+    public static void sendKeysToElement(String keys,By locator)
+    {getElement(locator).sendKeys(keys);
+    }
+
+    public static String getElementText(By locator) {return getElement(locator).getText();
     }
 }
