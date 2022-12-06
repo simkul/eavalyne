@@ -39,4 +39,10 @@ public class LoginPage {
 
     public static String readOpenedPage() {return Common.getElementText(Locators.Eavalyne.Prisijungti.paragraphName);
     }
+    public static void waitForLoginPageLoad() {Common.waitForElementWithVisabilityChange(Locators.Eavalyne.Prisijungti.pageTitleLoad);
+    }
+    public static String readPage() {return Common.getElementText(Locators.Eavalyne.Prisijungti.pageLoad);
+    }
+
+
 }
