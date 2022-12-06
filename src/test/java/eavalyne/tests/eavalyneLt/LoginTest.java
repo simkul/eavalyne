@@ -35,6 +35,31 @@ public class LoginTest extends TestBase {
                         actualRezult,
                         expectedRezult)
         );
+    }
+    @Test
+    private void loginWithNotCorectEmail(){
+
+        String insertEmail = "apallinarija@gmail.co";
+        String insertPassword = "Test1234";
+        String expectedRezult = "Prisijungti / Sukurti paskyrą";
+        String actualRezult = null;
+
+        LoginPage.clickOnPrisijungtibutton();
+        LoginPage.waitForVisability();
+        LoginPage.enterEmail(insertEmail);
+        LoginPage.enterPassword(insertPassword);
+        LoginPage.clickOnSecondPrisijungtiButton();
+        LoginPage.waitForLoginPageLoad();
+
+        actualRezult = LoginPage.readPage();
+
+        Assert.assertTrue(actualRezult.contains(expectedRezult),
+                String.format("Actual [%s]; Expected [%s]",
+                        actualRezult,
+                        expectedRezult)
+        );
+
+
 
     }
 
