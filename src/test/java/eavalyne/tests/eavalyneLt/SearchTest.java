@@ -17,11 +17,11 @@ public class SearchTest extends TestBase {
 
     @Test
     private void searchByItemBrandName(){
-        String insertItemName = "Adidas";
+        String insertBrandName = "Adidas";
         String expectedRezult = "";
         String actualRezult = "";
 
-        SearchPage.enter
+        SearchPage.enterItemBrandName(insertBrandName);
 
 
     }
