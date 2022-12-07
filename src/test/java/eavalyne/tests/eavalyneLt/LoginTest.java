@@ -15,7 +15,7 @@ public class LoginTest extends TestBase {
         LoginPage.acceptPrivacyConfirmation();
     }
     @Test
-    private void loginWihtCorectData(){
+    private void loginWithCorrectData(){
         String insertEmail = "apallinarija@gmail.com";
         String insertPassword = "Test1234";
         String expectedRezult = "Mano paskyra";
@@ -37,7 +37,7 @@ public class LoginTest extends TestBase {
         );
     }
     @Test
-    private void loginWithNotCorectEmail(){
+    private void loginWithNotCorrectEmail(){
 
         String insertEmail = "apallinarija@gmail.co";
         String insertPassword = "Test1234";
@@ -58,9 +58,28 @@ public class LoginTest extends TestBase {
                         actualRezult,
                         expectedRezult)
         );
+    }
+    @Test
+    private void loginWithNotCorrectPassword(){
+        String insertEmail = "apallinarija@gmail.com";
+        String insertPassword = "Test1236";
+        String expectedRezult = "Prisijungti / Sukurti paskyrą";
+        String actualRezult = null;
 
+        LoginPage.clickOnPrisijungtibutton();
+        LoginPage.waitForVisability();
+        LoginPage.enterEmail(insertEmail);
+        LoginPage.enterPassword(insertPassword);
+        LoginPage.clickOnSecondPrisijungtiButton();
+        LoginPage.waitForLoginPageLoad();
 
+        actualRezult = LoginPage.readPage();
 
+        Assert.assertTrue(actualRezult.contains(expectedRezult),
+                String.format("Actual [%s]; Expected [%s]",
+                        actualRezult,
+                        expectedRezult)
+        );
     }
 
 }
