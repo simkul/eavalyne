@@ -19,4 +19,7 @@ public class SearchPage {
     public static void waitForPageLoad() {
         Common.waitForElementWithVisabilityChange(Locators.Eavalyne.Search.itemBrandName);
     }
+
+    public static String readOpenedPage() {return Common.getElementText(Locators.Eavalyne.Search.itemBrandName);
+    }
 }
