@@ -3,6 +3,7 @@ package eavalyne.tests.eavalyneLt;
 import eavalyne.pages.eavalyneLt.LoginPage;
 import eavalyne.pages.eavalyneLt.SearchPage;
 import eavalyne.tests.TestBase;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -26,7 +27,13 @@ public class SearchTest extends TestBase {
         SearchPage.clickOnItem();
         SearchPage.waitForPageLoad();
 
+        actualRezult = SearchPage.readOpenedPage();
 
+        Assert.assertTrue(actualRezult.contains(expectedRezult),
+                String.format("Actual [%s]; Expected [%s]",
+                        actualRezult,
+                        expectedRezult)
+        );
     }
 
 }
