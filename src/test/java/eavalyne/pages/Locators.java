@@ -22,6 +22,7 @@ public class Locators {
         }
         public static class Search{
             public static By searchLine = By.xpath("//input[@id='input-field-search-id']");
+            public static By searchIcon = By.xpath("//button[@type='submit']");
         }
     }
 }
