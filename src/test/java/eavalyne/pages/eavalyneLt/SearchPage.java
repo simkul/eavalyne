@@ -11,4 +11,12 @@ public class SearchPage {
     public static void clickOnSearchIcon() {
         Common.clickElement(Locators.Eavalyne.Search.searchIcon);
     }
+
+    public static void clickOnItem() {
+        Common.clickElement(Locators.Eavalyne.Search.item);
+    }
+
+    public static void waitForPageLoad() {
+        Common.waitForElementWithVisabilityChange(Locators.Eavalyne.Search.itemBrandName);
+    }
 }
