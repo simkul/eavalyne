@@ -22,6 +22,7 @@ public class SearchTest extends TestBase {
         String actualRezult = "";
 
         SearchPage.enterItemBrandName(insertBrandName);
+        SearchPage.clickOnSearchIcon();
 
 
     }
