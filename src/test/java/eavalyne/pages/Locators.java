@@ -20,5 +20,8 @@ public class Locators {
             public static By pageLoad = By.xpath("//h5[@class='modal-title']");
 
         }
+        public static class Search{
+            public static By searchLine = By.xpath("//input[@id='input-field-search-id']");
+        }
     }
 }
