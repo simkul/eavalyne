@@ -7,4 +7,8 @@ public class SearchPage {
     public static void enterItemBrandName(String insertBrandName) {
         Common.sendKeysToElement(insertBrandName,Locators.Eavalyne.Search.searchLine);
     }
+
+    public static void clickOnSearchIcon() {
+        Common.clickElement(Locators.Eavalyne.Search.searchIcon);
+    }
 }
