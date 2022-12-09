@@ -22,9 +22,10 @@ public class Locators {
         }
         public static class Search{
             public static By searchLine = By.xpath("//input[@id='input-field-search-id']");
-            public static By searchIcon = By.xpath("//button[@type='submit']");
-            public static By item = By.xpath("//*[@id='listing']/div[3]/div[1]/ul/li[1]");
-            public static By itemBrandName = By.xpath("//*[@id='__layout']/div/main/article/div[2]/div/div/div[2]/div/h1/strong[1]");
+            public static By searchIcon = By.xpath("//button[@class='base-button primary normal gray']");
+            public static By searchPage = By.xpath("//*[@class='query-text']");
+            public static By item = By.xpath("//li[@class='product-item'][1]");
+            public static By itemBrandName = By.xpath("//h1[@class='_heading-strong']");
         }
     }
 }
