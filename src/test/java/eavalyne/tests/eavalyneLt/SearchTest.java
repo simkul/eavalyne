@@ -19,11 +19,12 @@ public class SearchTest extends TestBase {
     @Test
     private void searchByItemBrandName(){
         String insertBrandName = "adidas";
-        String expectedRezult = "adidas";
+        String expectedRezult = "ADIDAS";
         String actualRezult = null;
 
         SearchPage.enterItemBrandName(insertBrandName);
         SearchPage.clickOnSearchIcon();
+        SearchPage.waitForSearchPageLoad();
         SearchPage.clickOnItem();
         SearchPage.waitForPageLoad();
 
