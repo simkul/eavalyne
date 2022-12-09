@@ -11,7 +11,9 @@ public class SearchPage {
     public static void clickOnSearchIcon() {
         Common.clickElement(Locators.Eavalyne.Search.searchIcon);
     }
-
+    public static void waitForSearchPageLoad() {
+        Common.waitForElementWithVisabilityChange(Locators.Eavalyne.Search.searchPage);
+    }
     public static void clickOnItem() {
         Common.clickElement(Locators.Eavalyne.Search.item);
     }
@@ -22,4 +24,6 @@ public class SearchPage {
 
     public static String readOpenedPage() {return Common.getElementText(Locators.Eavalyne.Search.itemBrandName);
     }
+
+
 }
