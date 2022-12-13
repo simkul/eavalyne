@@ -30,6 +30,7 @@ public class Locators {
         }
         public static class SearchByFilters{
             public static By label = By.xpath("//*[@for='checkbox-acbc']");
+            public static By color = By.xpath("//*[@for='checkbox-czarny']");
         }
     }
 }
