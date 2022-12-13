@@ -38,10 +38,15 @@ public class SearchTest extends TestBase {
     }
     @Test
     private void searchByFiltersTest(){
+        String expectedRezult = "produktų";
+        String actualRezult = null;
+
         SearchPage.clickOnLabel();
         SearchPage.cliclOnSize();
         SearchPage.clickOnSpalvaButton();
         SearchPage.clickOnBlack();
+
+        actualRezult = SearchPage.readPage();
     }
 
 
