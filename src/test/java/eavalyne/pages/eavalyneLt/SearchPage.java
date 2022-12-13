@@ -35,7 +35,6 @@ public class SearchPage {
     }
 
     public static void clickOnSpalvaButton() {
-        Common.waitForElementWithVisabilityChange(Locators.Eavalyne.SearchByFilters.spalvaButton);
         Common.clickElement(Locators.Eavalyne.SearchByFilters.spalvaButton);
     }
     public static void clickOnBlack() {
