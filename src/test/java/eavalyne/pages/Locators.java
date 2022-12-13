@@ -26,6 +26,10 @@ public class Locators {
             public static By searchPage = By.xpath("//*[@class='query-text']");
             public static By item = By.xpath("//li[@class='product-item'][1]");
             public static By itemBrandName = By.xpath("//h1[@class='_heading-strong']");
+
+        }
+        public static class SearchByFilters{
+            public static By label = By.xpath("//*[@for='checkbox-acbc']");
         }
     }
 }
