@@ -29,12 +29,16 @@ public class SearchPage {
     public static void clickOnLabel() {
         Common.clickElement(Locators.Eavalyne.SearchByFilters.label);
     }
+    public static void cliclOnSize() {
+        Common.clickElement(Locators.Eavalyne.SearchByFilters.size);
+    }
+
     public static void clickOnSpalvaButton() {
         Common.clickElement(Locators.Eavalyne.SearchByFilters.spalvaButton);
     }
     public static void clickOnBlack() {
         Common.clickElement(Locators.Eavalyne.SearchByFilters.black);
     }
-
-
 }
+
+
