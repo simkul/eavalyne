@@ -36,5 +36,10 @@ public class SearchTest extends TestBase {
                         expectedRezult)
         );
     }
+    @Test
+    private void searchByFiltersTest(){
+        SearchPage.clickOnLabel();
+    }
+
 
 }
