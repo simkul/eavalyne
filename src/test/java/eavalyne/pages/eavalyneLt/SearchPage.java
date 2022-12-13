@@ -30,6 +30,7 @@ public class SearchPage {
         Common.clickElement(Locators.Eavalyne.SearchByFilters.label);
     }
     public static void cliclOnSize() {
+        Common.waitForElementWithVisabilityChange(Locators.Eavalyne.SearchByFilters.size);
         Common.clickElement(Locators.Eavalyne.SearchByFilters.size);
     }
 
