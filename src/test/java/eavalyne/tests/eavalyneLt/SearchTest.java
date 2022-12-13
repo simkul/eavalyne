@@ -47,6 +47,12 @@ public class SearchTest extends TestBase {
         SearchPage.clickOnBlack();
 
         actualRezult = SearchPage.readPage();
+
+        Assert.assertTrue(actualRezult.contains(expectedRezult),
+                String.format("Actual [%s]; Expected [%s]",
+                        actualRezult,
+                        expectedRezult)
+        );
     }
 
 
