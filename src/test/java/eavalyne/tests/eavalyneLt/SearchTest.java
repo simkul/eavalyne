@@ -39,6 +39,7 @@ public class SearchTest extends TestBase {
     @Test
     private void searchByFiltersTest(){
         SearchPage.clickOnLabel();
+        SearchPage.cliclOnSize();
         SearchPage.clickOnSpalvaButton();
         SearchPage.clickOnBlack();
     }
