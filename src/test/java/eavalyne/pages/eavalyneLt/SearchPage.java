@@ -39,6 +39,10 @@ public class SearchPage {
     public static void clickOnBlack() {
         Common.clickElement(Locators.Eavalyne.SearchByFilters.black);
     }
+
+    public static String readPage() {
+        return Common.getElementText(Locators.Eavalyne.SearchByFilters.products);
+    }
 }
 
 
