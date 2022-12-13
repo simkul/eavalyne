@@ -26,4 +26,7 @@ public class SearchPage {
     }
 
 
+    public static void clickOnLabel() {
+        Common.clickElement(Locators.Eavalyne.SearchByFilters.label);
+    }
 }
