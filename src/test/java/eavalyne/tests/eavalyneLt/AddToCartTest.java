@@ -16,7 +16,14 @@ public class AddToCartTest extends TestBase {
 
     @Test
     private void addToCartItem(){
+
+        String expectedRezult = "Pinko";
+        String actualRezult = null;
+
         AddToCartPage.clickOnAddButton();
         AddToCartPage.clickOnIKrepseli();
+        AddToCartPage.waitForCartPage();
+
+        actualRezult= AddToCartPage.readPage();
     }
 }
