@@ -2,6 +2,7 @@ package eavalyne.tests.eavalyneLt;
 
 import eavalyne.pages.eavalyneLt.AddToCartPage;
 import eavalyne.tests.TestBase;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -25,5 +26,10 @@ public class AddToCartTest extends TestBase {
         AddToCartPage.waitForCartPage();
 
         actualRezult= AddToCartPage.readPage();
+        Assert.assertTrue(actualRezult.contains(expectedRezult),
+                String.format("Actual [%s]; Expected [%s]",
+                        actualRezult,
+                        expectedRezult)
+        );
     }
 }
