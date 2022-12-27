@@ -4,6 +4,11 @@ import eavalyne.pages.Common;
 import eavalyne.pages.Locators;
 
 public class SearchPage {
+    public static void open(String url) {Common.openUrl(url);}
+    public static void acceptPrivacyConfirmation() {
+        Common.waitForElementWithVisabilityChange(Locators.Eavalyne.Cookies.cookiesBlog);
+        Common.clickElement(Locators.Eavalyne.Cookies.cookiesAccept);
+    }
     public static void enterItemBrandName(String insertBrandName) {
         Common.sendKeysToElement(insertBrandName,Locators.Eavalyne.Search.searchLine);
     }
@@ -45,6 +50,8 @@ public class SearchPage {
     public static String readPage() {
         return Common.getElementText(Locators.Eavalyne.SearchByFilters.products);
     }
+
+
 }
 
 

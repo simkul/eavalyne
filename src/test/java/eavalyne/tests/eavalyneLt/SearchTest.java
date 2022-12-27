@@ -12,8 +12,8 @@ public class SearchTest extends TestBase {
     @Override
     public void setUp(){
         super.setUp();
-        LoginPage.open("https://eavalyne.lt/c/moterims");
-        LoginPage.acceptPrivacyConfirmation();
+        SearchPage.open("https://eavalyne.lt/c/moterims");
+        SearchPage.acceptPrivacyConfirmation();
     }
 
     @Test
