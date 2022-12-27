@@ -18,4 +18,7 @@ public class AddToCartPage {
         Common.waitForElementWithVisabilityChange(Locators.Eavalyne.AddToCart.iKrepseliButton);
         Common.clickElement(Locators.Eavalyne.AddToCart.iKrepseliButton);
     }
+
+    public static void waitForCartPage() {Common.waitForElementWithVisabilityChange(Locators.Eavalyne.AddToCart.cartPage);
+    }
 }
