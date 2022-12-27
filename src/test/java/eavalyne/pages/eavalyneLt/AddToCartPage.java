@@ -6,10 +6,7 @@ import eavalyne.pages.Locators;
 public class AddToCartPage {
     public static void open(String url) {Common.openUrl(url);}
 
-    public static void acceptPrivacyConfirmation() {
-        Common.waitForElementWithVisabilityChange(Locators.Eavalyne.Cookies.cookiesBlog);
-        Common.clickElement(Locators.Eavalyne.Cookies.cookiesAccept);
-    }
+
 
     public static void clickOnAddButton() {Common.clickElement(Locators.Eavalyne.AddToCart.addButton);
     }
