@@ -38,6 +38,7 @@ public class Locators {
         public static class AddToCart{
             public static By addButton = By.xpath("//*[@class='add-to-cart-button base-button primary normal green']");
             public static By iKrepseliButton = By.xpath("//*[@class='go-to-cart-button base-button primary normal green']");
+            public static By cartPage = By.xpath("//*[@class='cart-items-list cart-items']");
         }
 
     }
