@@ -10,4 +10,12 @@ public class AddToCartPage {
         Common.waitForElementWithVisabilityChange(Locators.Eavalyne.Cookies.cookiesBlog);
         Common.clickElement(Locators.Eavalyne.Cookies.cookiesAccept);
     }
+
+    public static void clickOnAddButton() {Common.clickElement(Locators.Eavalyne.AddToCart.addButton);
+    }
+
+    public static void clickOnIKrepseli() {
+        Common.waitForElementWithVisabilityChange(Locators.Eavalyne.AddToCart.iKrepseliButton);
+        Common.clickElement(Locators.Eavalyne.AddToCart.iKrepseliButton);
+    }
 }
