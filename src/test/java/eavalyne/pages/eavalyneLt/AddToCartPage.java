@@ -21,4 +21,7 @@ public class AddToCartPage {
 
     public static void waitForCartPage() {Common.waitForElementWithVisabilityChange(Locators.Eavalyne.AddToCart.cartPage);
     }
+
+    public static String readPage() {return Common.getElementText(Locators.Eavalyne.AddToCart.cartPage);
+    }
 }
