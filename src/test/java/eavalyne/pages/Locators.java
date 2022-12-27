@@ -35,5 +35,10 @@ public class Locators {
             public static By black = By.xpath("//*[@for='checkbox-czarny']");
             public static By products = By.xpath("//*[@class='base-paragraph products-count']");
         }
+        public static class AddToCart{
+            public static By addButton = By.xpath("//*[@class='add-to-cart-button base-button primary normal green']");
+            public static By iKrepseliButton = By.xpath("//*[@class='go-to-cart-button base-button primary normal green']");
+        }
+
     }
 }
